@@ -33,56 +33,56 @@ export const FormSteps = () => {
 const step1 = {
   previous: null,
   nextStep: {
-    title: "Company Details",
+    title: "ข้อมูลลูกค้า",
     step: "2",
   },
 };
 
 const step2 = {
   previous: {
-    title: "Your Details",
+    title: "ข้อมูลคุณ",
     step: "1",
   },
   nextStep: {
-    title: "Invoice details",
+    title: "ข้อมูลใบเสนอราคา",
     step: "3",
   },
 };
 const step3 = {
   previous: {
-    title: "Your details",
+    title: "ข้อมูลลูกค้า",
     step: "2",
   },
   nextStep: {
-    title: "Payment Details",
+    title: "ข้อมูลการชำระเงิน",
     step: "4",
   },
 };
 const step4 = {
   previous: {
-    title: "Invoice details",
+    title: "ข้อมูลใบเสนอราคา",
     step: "3",
   },
   nextStep: {
-    title: "Invoice Terms",
+    title: "เงื่อนไขการออกใบแจ้งหนี้",
     step: "5",
   },
 };
 
 const step5 = {
   previous: {
-    title: "Payment Details",
+    title: "ข้อมูลการชำระเงิน",
     step: "4",
   },
   nextStep: {
-    title: "Review & download",
+    title: "ดาวน์โหลดใบแจ้งหนี้",
     step: "6",
   },
 };
 
 const step6 = {
   previous: {
-    title: "Invoice terms",
+    title: "เงื่อนไขการออกใบแจ้งหนี้",
     step: "5",
   },
   nextStep: null,
