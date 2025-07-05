@@ -42,7 +42,7 @@ const defaultValue = {
     routingCode: "123456",
     swiftCode: "AXISINBB1234",
     ifscCode: "UTIB0000000",
-    currency: "INR",
+    currency: "USD",
   },
   invoiceTerms: {
     invoiceNumber: "Invoice #25",
