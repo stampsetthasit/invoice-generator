@@ -4,50 +4,55 @@ import ImageInput from "@/app/component/ui/imageInput";
 
 export const YourDetailsForm = () => (
   <div className="pt-24">
-    <p className="text-2xl font-semibold pb-3">Your Details (From)</p>
+    <p className="text-2xl font-semibold pb-3">ข้อมูลของคุณ (ผู้ส่ง)</p>
     <CustomTextInput
       label="Email"
-      placeholder="e.g. pranav@prolab.sh"
+      placeholder="e.g. example@email.com"
       variableName="yourEmail"
     />
     <p className="pb-10 pt-3 text-xs font-medium text-neutral-500">
-      We&apos;ll fill the billing details automatically if we find the your.
+      {/* We&apos;ll fill the billing details automatically if we find the your. */}
     </p>
-    <p className="pb-2 text-sm font-medium text-neutral-500">Billing details</p>
+    <p className="pb-2 text-sm font-medium text-neutral-500">รายละเอียด</p>
     <CustomTextInput
-      label="Your Name"
-      placeholder="Pranav"
+      label="ชื่อ"
+      placeholder="สมชาย ใจดี"
       variableName="yourName"
     />
-    <ImageInput label="Logo" variableName="yourLogo" />
+    <ImageInput label="โลโก้" variableName="yourLogo" />
     <CustomTextInput
-      label="Address"
+      label="ที่อยู่"
       placeholder="Whitefield Circle,12"
       variableName="yourAddress"
     />
     <CustomTextInput
-      label="City"
-      placeholder="Bangalore"
+      label="ตำบล/แขวง"
+      placeholder="บางจาก"
       variableName="yourCity"
     />
     <CustomTextInput
-      label="State"
-      placeholder="Karnataka"
+      label="อำเภอ/เขต"
+      placeholder="พระโขนง"
       variableName="yourState"
     />
+    <CustomTextInput
+      label="จังหวัด"
+      placeholder="กรุงเทพมหานคร"
+      variableName="yourCountry"
+    />
     <CustomNumberInput
-      label="Zip"
-      placeholder="560066"
+      label="รหัสไปรษณีย์"
+      placeholder="10260"
       variableName="yourZip"
     />
     <CustomTextInput
-      label="Country"
-      placeholder="India"
-      variableName="yourCountry"
+      label="เบอร์โทรศัพท์"
+      placeholder="02 123 4567"
+      variableName="yourPhone"
     />
     <CustomTextInput
-      label="Tax ID"
-      placeholder="GSTIN 1234"
+      label="เลขประจําตัวผู้เสียภาษี"
+      placeholder="1 2345 67890 12 3"
       variableName="yourTaxId"
     />
   </div>

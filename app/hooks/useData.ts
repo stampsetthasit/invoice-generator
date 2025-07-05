@@ -10,6 +10,7 @@ export const useData = () => {
   const yourLogo = useGetValue("yourLogo");
   const yourTaxId = useGetValue("yourTaxId");
   const yourZip = useGetValue("yourZip");
+  const yourPhone = useGetValue("yourPhone");
 
   const email = useGetValue("email");
   const companyName = useGetValue("companyName");
@@ -73,6 +74,7 @@ export const useData = () => {
     yourEmail,
     yourTaxId,
     yourZip,
+    yourPhone,
   };
 
   const companyDetails = {

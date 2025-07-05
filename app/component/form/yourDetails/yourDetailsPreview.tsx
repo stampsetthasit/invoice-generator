@@ -11,6 +11,7 @@ export const YourDetailsPreview: React.FC<YourDetails> = ({
   yourLogo,
   yourTaxId,
   yourZip,
+  yourPhone,
 }) => (
   <div>
     <p className="text-[11px] text-neutral-400 font-semibold uppercase pb-3.5">
@@ -39,19 +40,19 @@ export const YourDetailsPreview: React.FC<YourDetails> = ({
       ) : (
         <div className="rounded-md bg-neutral-100 h-4 w-3/6 animate-pulse my-2" />
       )}
-      {yourAddress || yourState || yourZip ? (
+      {yourAddress || yourState || yourCountry || yourZip ? (
         <p className="mb-0.5">
-          {yourCity}, {yourState} {yourZip}
+          {yourCity}, {yourState}, {yourCountry}, {yourZip}
         </p>
       ) : (
         <div className="rounded-md bg-neutral-100 h-4 w-4/6 animate-pulse my-3" />
       )}
-      {yourCountry ? (
-        <p className="mb-1">{yourCountry}</p>
+      {yourPhone ? (
+        <p className="mb-1">{yourPhone}</p>
       ) : (
         <div className="rounded-md bg-neutral-100 h-4 w-3/6 animate-pulse my-2" />
       )}
-      {yourTaxId && <p>Tax ID:{yourTaxId}</p>}
+      {yourTaxId && <p>เลขประจําตัวผู้เสียภาษี: {yourTaxId}</p>}
     </div>
   </div>
 );

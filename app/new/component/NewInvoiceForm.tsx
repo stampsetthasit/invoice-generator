@@ -47,7 +47,7 @@ export const NewInvoiceForm = () => {
             <FormSteps />
           </div>
           <div className="relative min-h-screen h-full w-full flex justify-center items-center p-4 md:p-0">
-            <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#888_1px,transparent_1px)] [background-size:16px_16px]"></div>
             <UserDataPreview />
           </div>
         </FormProvider>

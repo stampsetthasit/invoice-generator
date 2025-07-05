@@ -20,6 +20,7 @@ interface YourDetails {
   yourLogo?: string | null;
   yourTaxId?: string | null;
   yourZip?: string | null;
+  yourPhone?: string | null;
 }
 
 interface InvoiceItemDetails {
