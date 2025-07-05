@@ -36,14 +36,12 @@ export const useData = () => {
 
   const invoiceNumber = useGetValue("invoiceNo");
   const issueDate = useGetValue("issueDate");
-  const dueDate = useGetValue("dueDate");
 
   const currency = useGetValue("currency") || "THB";
 
   const invoiceTerms = {
     invoiceNumber,
     issueDate,
-    dueDate,
   };
 
   const invoiceDetails = {

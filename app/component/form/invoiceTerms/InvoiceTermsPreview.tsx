@@ -1,9 +1,12 @@
 import { format } from "date-fns";
+import { th } from "date-fns/locale";
 import { ChevronDown } from "lucide-react";
+
+const buddhistYear = (date: Date) => date.getFullYear() + 543;
 
 export const InvoiceTermsPreview: React.FC<
   InvoiceTerms & { onClick?: (step: string) => void }
-> = ({ invoiceNumber, issueDate, dueDate, onClick }) => (
+> = ({ invoiceNumber, issueDate, onClick }) => (
   <div
     className="border-b py-4 px-10 grid grid-cols-2 justify-between border-dashed group cursor-pointer relative"
     onClick={() => onClick && onClick("5")}
@@ -25,18 +28,10 @@ export const InvoiceTermsPreview: React.FC<
     <div className="flex items-center justify-between pl-10">
       <div>
         <p className="text-[11px] text-neutral-400 font-semibold uppercase">
-          Issued
+          วันที่
         </p>
         <p className="font-medium text-xs">
-          {issueDate ? format(issueDate, "do MMM yyyy'") : ""}
-        </p>
-      </div>
-      <div>
-        <p className="text-[11px] text-neutral-400 font-semibold uppercase text-right">
-          Due Date
-        </p>
-        <p className="font-medium text-xs">
-          {dueDate ? format(dueDate, "do MMM yyyy'") : ""}
+            {issueDate ? `${format(new Date(issueDate), "d MMMM", { locale: th })} ${buddhistYear(new Date(issueDate))}` : ""}
         </p>
       </div>
     </div>

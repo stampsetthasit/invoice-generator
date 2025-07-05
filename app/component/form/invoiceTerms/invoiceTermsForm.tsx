@@ -11,6 +11,5 @@ export const InvoiceTermsForm = () => (
       variableName="invoiceNo"
     />
     <DateInput label="Issue date" variableName="issueDate" />
-    <DateInput label="Due date" variableName="dueDate" />
   </div>
 );

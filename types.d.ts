@@ -40,7 +40,6 @@ interface Item {
 interface InvoiceTerms {
   invoiceNumber?: string | null;
   issueDate?: string | null;
-  dueDate?: string | null;
 }
 
 interface PaymentDetails {

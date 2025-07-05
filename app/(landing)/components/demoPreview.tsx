@@ -47,7 +47,6 @@ const defaultValue = {
   invoiceTerms: {
     invoiceNumber: "Invoice #25",
     issueDate: "Fri Apr 19 2024 00:00:00 GMT+0530 (India Standard Time)",
-    dueDate: "Mon Apr 22 2024 00:00:00 GMT+0530 (India Standard Time)",
   },
   invoiceDetails: {
     note: "Services Period  21/03/2024 to 20/04/2024",

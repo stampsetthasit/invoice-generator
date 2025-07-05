@@ -6,7 +6,6 @@ import { pdfTypography, pdfContainers, pdfUtils } from "@/lib/pdfStyles";
 export const InvoiceTermsPdf: React.FC<InvoiceTerms> = ({
   invoiceNumber,
   issueDate,
-  dueDate,
 }) => (
   <View style={pdfContainers.invoiceTerms}>
     <View style={{ flex: 1 }}>
@@ -25,12 +24,6 @@ export const InvoiceTermsPdf: React.FC<InvoiceTerms> = ({
         <Text style={pdfTypography.title}>Issued</Text>
         <Text style={pdfTypography.subTitle}>
           {issueDate ? format(issueDate, "do MMM yyyy") : ""}
-        </Text>
-      </View>
-      <View>
-        <Text style={pdfTypography.title}>Due Date</Text>
-        <Text style={pdfTypography.subTitle}>
-          {dueDate ? format(dueDate, "do MMM yyyy") : ""}
         </Text>
       </View>
     </View>
