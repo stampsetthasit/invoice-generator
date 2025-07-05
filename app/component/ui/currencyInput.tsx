@@ -35,7 +35,7 @@ const CurrencyInput = () => {
               <PopoverTrigger asChild className="w-full">
                 <button className="flex gap-2 items-center justify-between w-full">
                   <label className="block text-sm font-medium leading-6 text-gray-900 whitespace-nowrap">
-                    Currency
+                    สกุลเงิน
                   </label>
                   <div className="flex gap-1.5 bg-neutral-100 text-sm pl-2 pr-2.5 rounded-full py-0.5 items-center">
                     {currencyDetails && (
