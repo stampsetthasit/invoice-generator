@@ -43,18 +43,6 @@ export const currencyList: {
     },
   },
   {
-    value: "INR",
-    label: "INR",
-    details: {
-      country: "India",
-      currencySymbol: "₹",
-      currencyName: "Indian Rupee",
-      currencyShortForm: "INR",
-      icon: IN,
-      iconName: "IN",
-    },
-  },
-  {
     value: "USD",
     label: "USD",
     details: {
@@ -220,6 +208,18 @@ export const currencyList: {
       currencyShortForm: "IDR",
       icon: ID,
       iconName: "ID",
+    },
+  },
+    {
+    value: "INR",
+    label: "INR",
+    details: {
+      country: "India",
+      currencySymbol: "₹",
+      currencyName: "Indian Rupee",
+      currencyShortForm: "INR",
+      icon: IN,
+      iconName: "IN",
     },
   },
 ];
