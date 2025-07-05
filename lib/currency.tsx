@@ -15,6 +15,7 @@ import {
   GB,
   FlagComponent,
   ID,
+  TH,
 } from "country-flag-icons/react/1x1";
 
 export const currencyList: {
@@ -29,6 +30,18 @@ export const currencyList: {
     iconName: string;
   };
 }[] = [
+  {
+    value: "THB",
+    label: "THB",
+    details: {
+      country: "Thailand",
+      currencySymbol: "฿",
+      currencyName: "Thai Baht",
+      currencyShortForm: "THB",
+      icon: TH,
+      iconName: "TH",
+    },
+  },
   {
     value: "INR",
     label: "INR",
