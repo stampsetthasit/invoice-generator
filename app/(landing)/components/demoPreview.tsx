@@ -65,7 +65,7 @@ const defaultValue = {
         qty: 0,
       },
     ],
-    currency: "INR",
+    currency: "THB",
   },
 };
 export default DemoPreview;

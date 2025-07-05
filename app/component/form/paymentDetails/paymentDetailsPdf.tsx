@@ -15,7 +15,7 @@ export const PaymentDetailsPdf: React.FC<PaymentDetailsPdfProps> = ({
   routingCode,
   swiftCode,
   ifscCode,
-  currency = "INR",
+  currency = "THB",
   countryImageUrl,
 }) => {
   const currencyDetails = currencyList.find(
